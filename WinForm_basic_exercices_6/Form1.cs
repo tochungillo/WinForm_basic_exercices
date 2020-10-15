@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WinForm_basic_exercices
+namespace WinForm_basic_exercices_6
 {
     public partial class Form1 : Form
     {
@@ -17,9 +17,14 @@ namespace WinForm_basic_exercices
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Hello!!!");
+            if (red.Checked)
+                choosen.Text = "Color choosen = red";
+            if (blue.Checked)
+                choosen.Text = "Color choosen = blue";
+            if (white.Checked)
+                choosen.Text = "Color choosen = white";
         }
     }
 }

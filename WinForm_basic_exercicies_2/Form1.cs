@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WinForm_basic_exercices
+namespace WinForm_basic_exercicies_2
 {
     public partial class Form1 : Form
     {
@@ -17,9 +17,13 @@ namespace WinForm_basic_exercices
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            MessageBox.Show("Hello!!!");
+            if (checkBox1.Checked)
+                MessageBox.Show("checked");
+            if (!checkBox1.Checked)
+                MessageBox.Show("unchecked");
+
         }
     }
 }

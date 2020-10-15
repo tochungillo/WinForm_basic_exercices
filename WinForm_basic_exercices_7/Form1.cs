@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WinForm_basic_exercices
+namespace WinForm_basic_exercices_7
 {
     public partial class Form1 : Form
     {
@@ -17,9 +17,9 @@ namespace WinForm_basic_exercices
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            MessageBox.Show("Hello!!!");
+            choosen.Text = "The choosen colour is " + colors.SelectedItem.ToString();
         }
     }
 }

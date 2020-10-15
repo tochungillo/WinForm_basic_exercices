@@ -1,4 +1,4 @@
-﻿namespace WinForm_basic_exercices
+﻿namespace WinForm_basic_exercices_7
 {
     partial class Form1
     {
@@ -28,25 +28,39 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.colors = new System.Windows.Forms.ComboBox();
+            this.choosen = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // label1
+            // colors
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(341, 203);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Hello";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.colors.FormattingEnabled = true;
+            this.colors.Items.AddRange(new object[] {
+            "red",
+            "blue",
+            "green",
+            "yellow",
+            "purple"});
+            this.colors.Location = new System.Drawing.Point(329, 139);
+            this.colors.Name = "colors";
+            this.colors.Size = new System.Drawing.Size(121, 24);
+            this.colors.TabIndex = 0;
+            this.colors.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // choosen
+            // 
+            this.choosen.Location = new System.Drawing.Point(95, 244);
+            this.choosen.Name = "choosen";
+            this.choosen.Size = new System.Drawing.Size(611, 22);
+            this.choosen.TabIndex = 1;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.choosen);
+            this.Controls.Add(this.colors);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -56,7 +70,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox colors;
+        private System.Windows.Forms.TextBox choosen;
     }
 }
 

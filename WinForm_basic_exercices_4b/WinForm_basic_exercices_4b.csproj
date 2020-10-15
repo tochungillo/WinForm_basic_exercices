@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{86B194B7-9BE7-4B81-85D1-85674F321F65}</ProjectGuid>
+    <ProjectGuid>{396C023D-5163-469A-8A0E-460C9B275283}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WinForm_basic_exercices</RootNamespace>
-    <AssemblyName>WinForm_basic_exercices</AssemblyName>
+    <RootNamespace>WinForm_basic_exercices_4b</RootNamespace>
+    <AssemblyName>WinForm_basic_exercices_4b</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
